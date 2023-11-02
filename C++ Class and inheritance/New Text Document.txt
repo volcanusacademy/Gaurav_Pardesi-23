@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+// single inheritance
+
+class employee{
+    public: 
+    int sallary = 50000;
+    void Sallary_details(){
+        cout<<"Sallary of employee is :"<<sallary;
+    }
+    
+};
+class bonus:public employee {
+    public:
+    int usallary ,bonus;
+    void Get_bonus(int bonus){
+        usallary = sallary+bonus;
+        cout<<"\nSallary of employee after bonus is "<<usallary;
+    }
+};
+int main(){
+    bonus ayz ;
+    ayz.Sallary_details();
+    ayz.Get_bonus(500);
+}
