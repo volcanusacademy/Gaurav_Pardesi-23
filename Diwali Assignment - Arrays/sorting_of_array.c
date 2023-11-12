@@ -3,16 +3,16 @@
 int main ()
 {
   int n, temp;
-  printf ("Enter how many person in this list");
+  printf ("Enter how many person in this list: ");
   scanf ("%d", &n);
   int age[n];
-  for (int i = 0; i <n; i++)
+  for (int i =0; i<n; i++)
     {				// for taking input from user
-      printf ("Enter the age of %d peson: ", i);
+      printf ("Enter the age of %d peson: ", i+1);
       scanf ("%d", &age[i]);
     }
   printf ("print unsorted list: \n");	// print unsorted list
-  for (int i = 0; i <=n; i++)
+  for (int i =0; i <n; i++)
     {
 
       printf ("%d  ", age[i]);
@@ -20,7 +20,7 @@ int main ()
 // for sorting list
   for (int i = 0; i <n; i++)
     {
-      for (int j = i + 1; j <= n; j++)
+      for (int j = i + 1; j < n; j++)
 	{
 	  if (age[i] > age[j])
 	    {
@@ -31,11 +31,13 @@ int main ()
 	}
     }
     printf ("\nprint sorted list: \n");
-  for (int i = 0; i <= n; i++)
+  for (int i = 0; i <n; i++)
     {
       
       printf ("%d  ", age[i]);
     }
+      for (int i =0; i <n; i++)
+  
 
 
 
