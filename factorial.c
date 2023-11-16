@@ -1,23 +1,16 @@
-#include <stdio.h>
-// program for find factorial of given number
-int
-Recursive (int num)
-{
-  int temp = 1;
-  for (int i = 1; i <= num; i++)
-    {
-      temp = i * temp;
-    }
-  printf ("Factorial of %d is %d ", num, temp);
+#include<stdio.h>
+  int recursive( int n) {
+    if (n>=1)
+        return n*recursive(n-1);
+    else
+        return 1;
+}
+int main() {
+     int n;
+    printf("Enter the number: ");
+    scanf("%d",&n);
+    printf("Factorial of %d = %d", n, recursive(n));
+    return 0;
 }
 
-int
-main ()
-{
-  int num;
-  printf ("Enter the value: \n");
-  scanf ("%d", &num);
-  Recursive (num);
 
-  return 0;
-}
