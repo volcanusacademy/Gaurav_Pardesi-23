@@ -1,0 +1,317 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* body */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    color: white;
+   
+}
+nav{
+    display: flex ;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 20px; */
+    background-color: rgb(1, 12, 17);
+    /* border-bottom: 1px solid white; */
+    /* height: zazaza; */
+    /* background-color: aqua; */
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    
+}
+
+.logo .img img{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    /* margin-top: 50px; */
+   
+    
+  
+
+
+}
+.logo .img{
+    height: 100px;
+    /* width: 0px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo .img img:hover{
+    transform: scale(1.1);
+    transition: 1s ease;
+    border: 2px solid white;
+    box-shadow: 0 0  100px red;
+}
+
+.items{
+    display: flex;
+    gap: 1rem;  
+    
+
+}
+
+.items a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    padding: 20px;
+    box-sizing: border-box;  
+    border-radius: 10px;
+}
+.items a:hover{
+    color: red;
+    box-shadow: 0 0 20px white;
+   
+ 
+}
+
+/* main */
+main{
+    text-align: center;
+    position: relative;
+    top: 160px;
+    
+}
+main h1{
+    margin: 15px;
+    z-index: 1;
+}
+
+.dragonball{
+    display: flex;
+   /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    /* background-color: white; */
+    /* color: blue; */
+    height: 500px;
+    margin: 50px;
+    position: relative;
+    
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    height: 350px;
+    justify-content: center;
+    width: 250px;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.575);
+ 
+}
+.cards p{
+    width: 250px;
+    text-align: center;
+}
+.dragonball .cards:hover{
+
+
+    transform: scale(1.1);
+    transition: 1s ease;
+    box-shadow: 0 0 30px rgb(0, 255, 255);
+    }
+
+
+.cards img {
+    height: 200px;
+    width: 200px;
+    
+}
+
+/* naruto */
+
+.Naruto{
+    display: flex;
+   /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    /* background-color: white; */
+    /* color: blue; */
+    height: 500px;
+    margin: 50px;
+}
+
+.Naruto .cards:hover{
+
+    
+    transform: rotate(360deg);
+    
+    transition: 2s ease;
+    box-shadow: 0 0 30px rgb(255, 98, 0);
+    }
+/* jujutsu */
+
+.jujutsu{
+    display: flex;
+   /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    /* background-color: white; */
+    /* color: blue; */
+    height: 500px;
+    margin: 50px;
+}
+
+.jujutsu .cards:hover{
+
+
+  transform: rotateY(390deg);
+
+
+    transition: 2s ease;
+    box-shadow: 0 0 30px rgb(223, 141, 183);
+    }
+/* demonslayes */
+
+.Demonslayer{
+    display: flex;
+   /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    /* background-color: white; */
+    /* color: blue; */
+    height: 500px;
+    margin: 50px;
+}
+
+.Demonslayer .cards:hover{
+
+
+    transform: rotate(-10deg);
+    transition: 1s ease;
+    box-shadow: 0 0 30px rgb(203, 214, 76);
+    }
+
+
+    /* responsive */
+
+@media(max-width:1160px){
+    .name{
+        display: none;
+    }
+
+    .cards img{
+        height: 150px;
+        width: 150px;
+    }
+
+    .cards{
+        height: 270px;
+        width: 200px;
+        
+    }
+    .cards h1{
+       font-size: 15px;
+    }
+    .cards p{
+        font-size: 14px;
+        width: 150px;
+    }
+}
+
+
+
+
+
+@media(max-width:772px){
+    .items{
+        gap: 0rem;
+    }
+   
+    .dbz{
+       
+        height: 110vh;
+    }
+   
+    .items a{
+        font-size: 15px;
+    }
+    .dragonball{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+       
+       
+     
+        
+      
+    }
+    .Naruto{
+        flex-wrap: wrap;
+      
+    }
+    .jujutsu{
+        flex-wrap: wrap;
+     
+    }
+    .Demonslayer{
+        flex-wrap: wrap;
+      
+    }
+
+    .logo .img img{
+        height: 50px;
+        width: 50px;
+    }
+}
+
+/* 553 */
+@media(max-width:553px){
+   
+    .dbz{
+       
+        height: 190vh;
+    }
+   
+    .items a{
+        font-size: 10px;
+    }
+    .dragonball{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+       
+       
+     
+        
+      
+    }
+    .logo{
+        /* display: none; */
+    }
+    .Naruto{
+        flex-wrap: wrap;
+      
+    }
+    .jujutsu{
+        flex-wrap: wrap;
+     
+    }
+    .Demonslayer{
+        flex-wrap: wrap;
+      
+    }
+    .logo .img img{
+        height: 30px;
+        width: 30px;
+    }
+}
