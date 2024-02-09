@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+     border-bottom: 1px solid white;
+     position: sticky;
+     top: 0;
+     background-color: rgba(21, 2, 18, 0.995);
+     z-index: 10;
+    
+}
+
+nav{
+    display: flex; 
+  justify-content: space-around;
+    align-items: center;
+     /* background-color: brown; */
+     width: 40%;
+     padding: 10px;
+   
+    
+     
+
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+     
+}
+
+nav a:hover{
+    background-color: rgb(5, 66, 66);
+    transition: 0.5s ease;
+    color: rgb(251, 241, 43);
+    box-shadow: 0 0 15px  rgb(43, 241, 251);
+    border-radius: 10px;
+    
+}
+.button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 350px;
+      gap: 1rem;
+      flex-direction: column;
+
+      border-bottom: 1px solid white;
+}
+button{
+  /* margin: 50px; */
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: rgb(6, 6, 6);
+    font-size: 20px;
+    color: rgb(254, 247, 247);
+    border: 1px solid rgba(255, 255, 255, 0.307);
+    cursor: pointer;
+    
+}
+
+button:nth-child(2):hover{
+    background-color: rgb(72, 255, 0);
+    box-shadow: 0 0 15px rgb(98, 255, 0);
+    transition:  0.5s;
+    color: rgb(5, 5, 5);
+    /* text-shadow: rgb(243, 3, 3); */
+}
+button:nth-child(3):hover{
+    background-color: rgb(234, 255, 0);
+    box-shadow: 0 0 15px rgb(242, 255, 0);
+    transition:  0.5s;
+    color: rgb(10, 10, 10);
+    /* text-shadow: greenyellow; */
+}
+button:nth-child(4):hover{
+    background-color: rgb(16, 241, 192);
+    box-shadow: 0 0 15px rgb(16, 241, 196);
+    transition:  0.5s;
+    color: rgb(10, 10, 10);
+    /* text-shadow: greenyellow; */
+}
+
+
+/* cards */
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(70vh);
+    /* height: 70vh; */
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.cardcontainer{
+    position: relative;
+    /* background-color: green; */
+    height: 300px;
+    width: 300px;
+    perspective: 500px;
+    cursor: pointer;
+
+ 
+}
+
+.card{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s;
+    /* background-color: rgb(128, 70, 0); */
+    height: 350px;
+    width: 300px;
+     border-radius: 10px;
+
+     
+   
+   
+}
+
+.front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  
+    backface-visibility: hidden;
+ 
+}
+.back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(78, 9, 71);
+    backface-visibility: hidden;
+       transform: rotatey(180deg);
+    
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 10px;
+      
+   
+}
+.card img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cardcontainer:hover .card{
+
+    transform: rotatey(180deg);
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 55px;
+}
+
+/* grid */
+
+.gridcontainer{
+    display: grid;
+    height: 100vh;
+    gap: 1rem;
+    grid-template-columns: auto auto auto;
+    grid-auto-flow: row;
+    
+
+}
+
+.box{
+    box-sizing: border-box;
+    
+    height: 300px;
+    /* width: 400px; */
+    background-color: rgba(0, 255, 255, 0.46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 25px;
+    border: 2px solid black;
+    /* overflow: hidden; */
+}
+
+.box:nth-child(3){
+    background-color: rgba(0, 255, 0, 0.407);
+    grid-column-start:1 ;
+    grid-column-end: 3;
+}
+
+.box:nth-child(2){
+    background-color: rgba(0, 255, 0, 0.418);
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.box:nth-child(6 ){
+    background-color: rgba(0, 255, 0, 0.436);
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+
+
+
+

@@ -1,0 +1,16 @@
+/* @media(max-width:1002px){
+    .cards{
+        height: 110vh;
+    }
+} */
+
+@media(max-width:672px){
+    .cards{
+         height: calc(100vh * 2);
+    }
+}
+/* @media(max-width:531px){
+    .cards{
+        height: 200vh;
+    }
+} */
