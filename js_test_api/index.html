@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mealdb</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .navitem{
+            display: flex;
+            background-color: crimson;
+            align-items: center;
+            gap: 3rem;
+            width: 100%;
+            justify-content: center;
+            color: white;
+            padding: 10px;
+            font-size: 20px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 4rem;
+            margin-top: 50px;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+            width: 250px;
+        }
+        .main img{
+            height: 100%;
+            width: 100%;
+            border: 3px solid yellow;
+        }
+        .navitem div {
+            cursor: pointer;
+        }
+        body{
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="navitem">
+      <div id="in">Indian</div>
+      <div id="am">American</div>
+      <div id="ca">candian</div>
+      <div id="it">italian</div>
+      </div>
+    </nav>
+
+    <div class="container">
+        <div class="main"></div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
